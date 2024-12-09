@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #535c68;
+}
+.container{
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  display: flex;
+  border-radius: 5px;
+}
+.left-image{
+width: 350px;
+border-radius: 5px;
+background-image: url(assets/8252722_3864158.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+}
+.right-content{
+  flex: 1;
+  padding: 15px;
+  overflow: hidden;
+}
+.right-content .title{
+  font-size: 1rem;
+  color: #00A878;
+  margin-bottom: 20px;
+}
+label{
+  display: block;
+  color: #888;
+}
+.input-content{
+  margin-bottom: 10px;
+}
+input{
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+input:focus{
+  border-color: #888;
+  outline: #888;
+}
+.buttons{
+  margin-bottom: 20px;
+  display: flex;
+  gap:20px
+}
+.buttons .calculate-btn{
+  padding: 10px 20px;
+  background: #00A7E1;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.buttons .calculate-btn:hover{
+  background: #007196;
+}
+.buttons .clear-btn{
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  background: #FF4242;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.buttons .clear-btn:hover{
+  background: #ae2c2c;
+}
+.result{
+  padding: 20px;
+  border: 2px solid #00A7E1;
+}
+.result p{
+  margin-bottom: 10px;
+}
+.result p:first-child{
+  color:#EF476F;
+}
+.error{
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: red;
+}
